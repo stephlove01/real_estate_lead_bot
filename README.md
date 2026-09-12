@@ -9,10 +9,10 @@ An AI-powered real estate lead management and qualification system designed to h
 ## Project Status
 
 - **Phase:** Implementation Preparation / Scaffolding
-- **Documentation:** Complete
-- **Application Code:** Scaffolding in progress
+- **Documentation:** Complete (being consolidated into `docs/`)
+- **Application Code:** Scaffolding complete
 
-See [`docs/TASK.md`](docs/TASK.md) (or root `TASK.md`) for the full task tracker.
+See [`docs/TASK.md`](docs/TASK.md) for the full task tracker.
 
 ---
 
@@ -74,7 +74,7 @@ real_estate_lead_bot/
 ├── n8n/                      # Workflow definitions
 ├── database/                 # Migrations, seeds, schema notes
 ├── tests/                    # Cross-cutting / E2E tests
-├── docs/                     # All specification documents
+├── docs/                     # Specification documents (consolidation in progress)
 ├── .env.example
 ├── .gitignore
 ├── docker-compose.yml        # Local Postgres + n8n
@@ -84,19 +84,12 @@ real_estate_lead_bot/
 
 ### Specification Documents
 
-All detailed design documents currently live at the repository root (and are being consolidated into `docs/`). Key files:
+Core documents are being moved into `docs/`. Currently available there:
 
-- `Real Estate Lead Bot — Product Requirements Document.md` — PRD
-- `System Architecture Document (SAD).md` — Architecture
-- `Database & Data Model Specification.md`
-- `API Specification.md`
-- `AI Specification.md`
-- `UI-UX Specification.md`
-- `LEAD_QUALIFICATION_SPEC.md`
-- `DEPLOYMENT_SPEC.md`
-- `DEVELOPMENT_SETUP.md`
-- `TESTING_SPEC.md`
-- `TASK.md`
+- [`docs/TASK.md`](docs/TASK.md) — Project task tracker
+- [`docs/LEAD_QUALIFICATION_SPEC.md`](docs/LEAD_QUALIFICATION_SPEC.md) — Scoring & classification
+
+The larger specification files (PRD, Architecture, Database, API, AI, UI-UX, Deployment, Development Setup, Testing) still live at the repository root and will be moved into `docs/` next to keep the root clean while preserving exact content.
 
 ---
 
@@ -150,7 +143,7 @@ npm run dev
 4. **AI is not the source of truth** — always validate AI output before persisting.
 5. **Test as you go**.
 
-See `DEVELOPMENT_SETUP.md` and `TASK.md` for the recommended implementation order.
+See `DEVELOPMENT_SETUP.md` and `docs/TASK.md` for the recommended implementation order.
 
 ---
 
