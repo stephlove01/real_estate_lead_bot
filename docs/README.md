@@ -1,23 +1,28 @@
 # Documentation
 
-This folder contains all project specifications and design documents.
+This folder contains the project specifications and design documents.
 
-## Core Documents
+## Moved / Available Here
 
 | Document | Description |
 |----------|-------------|
-| [Product Requirements Document](./Real%20Estate%20Lead%20Bot%20%E2%80%94%20Product%20Requirements%20Document.md) | Full product requirements |
-| [System Architecture Document (SAD)](./System%20Architecture%20Document%20(SAD).md) | Technical architecture |
-| [Database & Data Model Specification](./Database%20%26%20Data%20Model%20Specification.md) | Schema and data model |
-| [API Specification](./API%20Specification.md) | API contracts |
-| [AI Specification](./AI%20Specification.md) | AI extraction & response rules |
-| [UI-UX Specification](./UI-UX%20Specification.md) | Frontend & UX guidelines |
-| [LEAD_QUALIFICATION_SPEC](./LEAD_QUALIFICATION_SPEC.md) | Scoring & classification rules |
-| [DEPLOYMENT_SPEC](./DEPLOYMENT_SPEC.md) | Deployment & infrastructure |
-| [DEVELOPMENT_SETUP](./DEVELOPMENT_SETUP.md) | Local setup & implementation guide |
-| [TESTING_SPEC](./TESTING_SPEC.md) | Testing strategy |
-| [TASK](./TASK.md) | Project task tracker |
+| [TASK.md](./TASK.md) | Project task tracker |
+| [LEAD_QUALIFICATION_SPEC.md](./LEAD_QUALIFICATION_SPEC.md) | Scoring & classification rules |
+
+## Still at repository root (large files — will be moved next)
+
+The following large specification documents remain at the repository root for now to preserve exact content. They will be moved into this folder in a follow-up:
+
+- `Real Estate Lead Bot — Product Requirements Document.md` (PRD)
+- `System Architecture Document (SAD).md`
+- `Database & Data Model Specification.md`
+- `API Specification.md`
+- `AI Specification.md`
+- `UI-UX Specification.md`
+- `DEPLOYMENT_SPEC.md`
+- `DEVELOPMENT_SETUP.md`
+- `TESTING_SPEC.md`
 
 ## Naming Convention
 
-All specification documents live here. Application code lives in `frontend/`, `backend/`, `n8n/`, and `database/`.
+All specification documents ultimately live here. Application code lives in `frontend/`, `backend/`, `n8n/`, and `database/`.
