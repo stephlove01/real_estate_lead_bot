@@ -855,47 +855,13 @@ Score
 
 ### Step 9
 
-If HOT:
-
-```text
-Sales Notification
-```
-
-### Step 10
-
-Customer receives:
-
-```text
-Bot Response
-```
-
-This complete journey should work before considering the MVP ready.
+Sales team can view the lead and take action.
 
 ---
 
-# 31. Regression Testing
+# 31. Test Data
 
-Whenever an important feature is changed, test the existing customer journey again.
-
-For example:
-
-```text
-Change AI prompt
-      ↓
-Run AI tests
-      ↓
-Run qualification tests
-      ↓
-Run end-to-end lead flow
-```
-
-Do not assume that changing one part cannot affect another part.
-
----
-
-# 32. Test Data
-
-Use fake data for development and testing.
+Use realistic but fictional data for tests.
 
 Example:
 
@@ -920,7 +886,7 @@ Do not use real customer information in development or automated tests.
 
 ---
 
-# 33. Test Environment
+# 32. Test Environment
 
 Development and testing should use a separate environment from production.
 
@@ -948,7 +914,7 @@ Do not run automated tests against the production database.
 
 ---
 
-# 34. Test Naming
+# 33. Test Naming
 
 Tests should have clear names.
 
@@ -972,7 +938,7 @@ test_stuff
 
 ---
 
-# 35. Minimum Test Coverage for MVP
+# 34. Minimum Test Coverage for MVP
 
 Before calling the MVP stable, verify at minimum:
 
@@ -1021,7 +987,7 @@ At least one complete customer journey should pass successfully.
 
 ---
 
-# 36. Testing Before Deployment
+# 35. Testing Before Deployment
 
 Before deploying a new version:
 
@@ -1045,7 +1011,7 @@ Before deploying a new version:
 
 ---
 
-# 37. Definition of Done
+# 36. Definition of Done
 
 A feature is considered tested when:
 
@@ -1059,7 +1025,7 @@ A feature is considered tested when:
 
 ---
 
-# 38. Final Testing Principle
+# 37. Final Testing Principle
 
 The purpose of testing is not to make the project complicated.
 

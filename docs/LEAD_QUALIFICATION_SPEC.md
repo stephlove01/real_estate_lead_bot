@@ -614,7 +614,7 @@ Every important score change should be stored.
 
 Example:
 
-```json id="w7u9di"
+```json
 {
   "lead_id": "lead-123",
   "score": 87,
@@ -664,7 +664,7 @@ Customer:
 
 AI extracts:
 
-```json id="w4t8f3"
+```json
 {
   "property_type": "APARTMENT",
   "bedrooms": 3,
@@ -746,115 +746,5 @@ Never assume budget.
 Never assume location.
 
 ### Rule 4
-
-Never assume buying or renting.
-
-### Rule 5
-
-Do not permanently classify a customer based on the first message.
-
-### Rule 6
-
-Recalculate when important information changes.
-
-### Rule 7
-
-Keep the scoring rules understandable.
-
-### Rule 8
-
-A low score should not prevent future qualification.
-
-### Rule 9
-
-AI extraction and lead scoring are separate processes.
-
-### Rule 10
-
-Sales staff should be able to understand why a lead received its classification.
-
----
-
-# 22. Future Improvements
-
-The MVP should use the simple scoring system above.
-
-Later, the system may consider additional signals such as:
-
-- Previous conversations.
-- Response frequency.
-- Property viewing requests.
-- Sales agent interactions.
-- Customer engagement.
-- Follow-up responses.
-- Appointment scheduling.
-- Historical conversion data.
-- Property availability.
-- Lead source.
-
-These should only be introduced when there is enough real-world data to justify them.
-
----
-
-# 23. Qualification Example Flow
-
-```text
-Customer
-"I want to buy a house in Lekki."
-        ↓
-Extract
-        ↓
-BUY + HOUSE + LEKKI
-        ↓
-Score
-        ↓
-45
-        ↓
-COLD
-        ↓
-Ask for budget + timeline
-        ↓
-Customer
-"My budget is ₦100m and I want to buy this month."
-        ↓
-Extract new information
-        ↓
-Recalculate
-        ↓
-85
-        ↓
-HOT
-        ↓
-Notify Sales
-```
-
----
-
-# 24. Definition of Done
-
-The qualification system is complete when:
-
-- A lead can receive a score from 0–100.
-- The score follows documented rules.
-- Leads are classified as HOT, WARM, COLD, or UNQUALIFIED.
-- Scores can be recalculated.
-- Score history can be stored.
-- Missing information can trigger further questions.
-- AI extraction is separated from scoring.
-- Sales staff can understand the reason for a score.
-- Low-scoring leads are not automatically discarded.
-- Tests cover common qualification scenarios.
-
----
-
-# 25. Final Principle
-
-The qualification system should answer one simple question:
-
-> **"How much attention should the sales team give this lead right now?"**
-
-It should not pretend to know exactly whether a customer will eventually buy.
-
-Start with simple, explainable rules.
 
 Use real customer data to improve the system later.
